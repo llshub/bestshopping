@@ -1,192 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap-3.1.1.min.js"></script>
-    <script src="js/uisearch.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/jquery.wmuSlider.js"></script>
-</head>
-<body>
-<!--header-->
-    <div class="header">
-        <div class="container">
-            <div class="header-top clearfloat">
-                <ul>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#">@example.com</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+188 8888 6666</li>
-                    <li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="#">登录</a></li>
-                    <li><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="#">注册</a></li>
-                </ul>
-            </div>
-            <div class="logo-nav">
-                <div class="logo-nav-left">
-                    <h1><a href="index.html">Best Store<span>SHOP ANYWHERE</span></a></h1>
-                </div>
-                <div class="logo-nav-middle clearfloat">
-                    <ul>
-                        <!--头部导航栏-->
-                        <li><a href="index.html" class="active">主页</a></li>
-                        <li>
-                           <a href="#">衣物<b></b></a>
-                           <ul class="dropdown">
-                               <div class="row hidden">
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown">
-                                            <h6>Man's Wear</h6>
-                                            <li><a href="products.html">Clothing</a></li>
-                                            <li><a href="products.html">Wallets</a></li>
-                                            <li><a href="products.html">Shoes</a></li>
-                                            <li><a href="products.html">Watches</a></li>
-                                            <li><a href="products.html">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown">
-                                            <h6>Women's Wear</h6>
-                                            <li><a href="products.html">Clothing</a></li>
-											<li><a href="products.html">Wallets,Bags</a></li>
-											<li><a href="products.html">Footwear</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Jewellery</a></li>
-											<li><a href="products.html">Beauty &     Grooming</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown">
-                                            <h6>Kid's Wear</h6>
-                                            <li><a href="products.html">Kids Home Fashion</a></li>
-                                            <li><a href="products.html">Boy's Clothing</a></li>
-                                            <li><a href="products.html">Girl's Clothing</a></li>
-                                            <li><a href="products.html">Shoes</a></li>
-                                            <li><a href="products.html">Brand Stores</a></li>
-                                        </ul>
-                                    </div>
-                               </div>
-                           </ul>
-                        </li>
-                        <li>
-                            <a href="#">家具<b></b> </a>
-                            <ul class="dropdown">
-                                <div class="row hidden">
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown">
-                                            <h6>家用区</h6>
-                                            <li><a href="furniture.html">Cookware</a></li>
-                                            <li><a href="furniture.html">Sofas</a></li>
-                                            <li><a href="furniture.html">Dining Tables</a></li>
-                                            <li><a href="furniture.html">Shoe Racks</a></li>
-                                            <li><a href="furniture.html">Home Decor</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown">
-                                            <h6>办公室区</h6>
-                                            <li><a href="furniture.html">Carpets</a></li>
-                                            <li><a href="furniture.html">Tables</a></li>
-                                            <li><a href="furniture.html">Sofas</a></li>
-                                            <li><a href="furniture.html">Shoe Racks</a></li>
-                                            <li><a href="furniture.html">Sockets</a></li>
-                                            <li><a href="furniture.html">Electrical Machines</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <ul class="column-dropdown" >
-                                            <h6>装饰品</h6>
-                                            <li><a href="furniture.html">Toys</a></li>
-                                            <li><a href="furniture.html">Wall Clock</a></li>
-                                            <li><a href="furniture.html">Lighting</a></li>
-                                            <li><a href="furniture.html">Top Brands</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li><a>联系我们</a></li>
-                    </ul>
-                </div>
-                <div class="logo-nav-right">
-                    <div class="search-box">
-                        <div id="sb-search" class="sb-search sb-search-open">
-                            <form>
-                                <input type="text" placeholder="输入查找内容..." class="sb-search-input">
-                                <input type="button" class="sb-search-submit">
-                                <span class="sb-icon-search"></span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <a href="#">
-                        <span>￥0.00 (0 items)</span>
-                        <span><img src="images/bag.png" alt=""></span>
-                    </a>
-                    <p><a href="#">清空购物车</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--//header-->
-<!--banner-->
-    <div class="banner">
-        <div class="container">
-            <div class="banner-info">
-                <h3>Free Online Shopping</h3>
-                <h4>
-                    Up to
-                    <span>50%<p><i>Off/-</i></p></span>
-                </h4>
-                <div class="wmuSlider example1">
-					<div class="wmuSliderWrapper">
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<div class="banner-info1">
-									<p>T-Shirts + Formal Pants + Jewellery + Cosmetics</p>
-								</div>
-							</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<div class="banner-info1">
-									<p>Toys + Furniture + Lighting + Watches</p>
-								</div>
-							</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<div class="banner-info1">
-									<p>Tops + Books & Media + Sports</p>
-								</div>
-							</div>
-						</article>
+<html lang="Ch">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link href="css/animate.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap-3.1.1.min.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/jquery.wmuSlider.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class="header">
+			<div class="container">
+				<div class="header-top clearfloat">
+					<ul>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#">@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+188 8888 6666</li>
+						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="#">登录</a></li>
+						<li><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="#">注册</a></li>
+					</ul>
+				</div>
+				<div class="logo-nav">
+					<div class="logo-nav-left">
+						<h1><a href="index.html">Best Store<span>SHOP ANYWHERE</span></a></h1>
 					</div>
-                </div>
-                <script>
-                    $(".example1").wmuSlider();
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="banner-bottom">
-        <div class="container">
-            <div class="banner-bottom-grids">
-                <div class="banner-bottom-grids-left">
-                    <div class="grid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--//banner-->
-</body>
+					<div class="logo-nav-middle clearfloat">
+						<ul>
+							<!--头部导航栏-->
+							<li><a href="index.html" class="active">主页</a></li>
+							<li>
+								<a href="#">衣物<b></b></a>
+								<ul class="dropdown">
+									<div class="row hidden">
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>Man's Wear</h6>
+												<li><a href="products.html">Clothing</a></li>
+												<li><a href="products.html">Wallets</a></li>
+												<li><a href="products.html">Shoes</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">Accessories</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>Women's Wear</h6>
+												<li><a href="products.html">Clothing</a></li>
+												<li><a href="products.html">Wallets,Bags</a></li>
+												<li><a href="products.html">Footwear</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Jewellery</a></li>
+												<li><a href="products.html">Beauty & Grooming</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>Kid's Wear</h6>
+												<li><a href="products.html">Kids Home Fashion</a></li>
+												<li><a href="products.html">Boy's Clothing</a></li>
+												<li><a href="products.html">Girl's Clothing</a></li>
+												<li><a href="products.html">Shoes</a></li>
+												<li><a href="products.html">Brand Stores</a></li>
+											</ul>
+										</div>
+									</div>
+								</ul>
+							</li>
+							<li>
+								<a href="#">家具<b></b> </a>
+								<ul class="dropdown">
+									<div class="row hidden">
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>家用区</h6>
+												<li><a href="furniture.html">Cookware</a></li>
+												<li><a href="furniture.html">Sofas</a></li>
+												<li><a href="furniture.html">Dining Tables</a></li>
+												<li><a href="furniture.html">Shoe Racks</a></li>
+												<li><a href="furniture.html">Home Decor</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>办公室区</h6>
+												<li><a href="furniture.html">Carpets</a></li>
+												<li><a href="furniture.html">Tables</a></li>
+												<li><a href="furniture.html">Sofas</a></li>
+												<li><a href="furniture.html">Shoe Racks</a></li>
+												<li><a href="furniture.html">Sockets</a></li>
+												<li><a href="furniture.html">Electrical Machines</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-4">
+											<ul class="column-dropdown">
+												<h6>装饰品</h6>
+												<li><a href="furniture.html">Toys</a></li>
+												<li><a href="furniture.html">Wall Clock</a></li>
+												<li><a href="furniture.html">Lighting</a></li>
+												<li><a href="furniture.html">Top Brands</a></li>
+											</ul>
+										</div>
+									</div>
+								</ul>
+							</li>
+							<li><a>联系我们</a></li>
+						</ul>
+					</div>
+					<div class="logo-nav-right">
+						<div class="search-box">
+							<div id="sb-search" class="sb-search sb-search-open">
+								<form>
+									<input type="text" placeholder="输入查找内容..." class="sb-search-input">
+									<input type="button" class="sb-search-submit">
+									<span class="sb-icon-search"></span>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="header-right">
+						<a href="#">
+							<span>￥0.00 (0 items)</span>
+							<span><img src="images/bag.png" alt=""></span>
+						</a>
+						<p><a href="#">清空购物车</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//header-->
+		<!--banner-->
+		<div class="banner">
+			<div class="container">
+				<div class="banner-info">
+					<h3>Free Online Shopping</h3>
+					<h4>
+						Up to
+						<span>50%<p><i>Off/-</i></p></span>
+					</h4>
+					<div class="wmuSlider example1">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>T-Shirts + Formal Pants + Jewellery + Cosmetics</p>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>Toys + Furniture + Lighting + Watches</p>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="banner-info1">
+										<p>Tops + Books & Media + Sports</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<script>
+						$(".example1").wmuSlider();
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="banner-bottom">
+			<div class="banner-bottom-content">
+				<div class="banner-bottom-content-left">
+					<img src="images/4.jpg">
+					<h3>Best <span>Store</span><br><i>INONLINESHOPPING</i></h3>
+					<p>Cupidatat non proident, sunt</p>
+					<p>Officia deserunt mollit anim</p>
+					<p>Laboris nisi ut aliquip consequat</p>
+				</div>
+				<div class="banner-bottom-content-middle">
+					<div>
+						<img src="images/1.jpg" alt="">
+						<p>Discount 45%</p>
+					</div>
+					<div>
+						<img src="images/2.jpg" alt="">
+						<div>
+							<div>
+								<p>Latest New Collections</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner-bottom-content-right">
+					<img src="images/3.jpg">
+					<p>Top And Classic Designs</p>
+					<span>2018 Collection</span>
+				</div>
+			</div>
+		</div>
+		<!--//banner-->
+		<!--collections-->
+		<div class="collect">
+			<div class="collect-content">
+				<div class="collect-content-top ">
+					<h3>最新商品</h3>
+					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="collect-content-bottom clearfix">
+					<div class="collect-content-bottom-one">
+						<img src="images/7.jpg" alt="">
+						<p>商务衬衫</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥325</i><span>￥249</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-two">
+						<img src="images/5.jpg" alt="">
+						<p>餐桌</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥1299</i><span>￥1099</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-three">
+						<img src="images/10.jpg" alt="">
+						<p>珍珠项链</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥5999</i><span>￥5099</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-four">
+						<img src="images/8.jpg" alt="">
+						<p>运动鞋</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥399</i><span>￥299</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-five">
+						<img src="images/6.jpg" alt="">
+						<p>室内装饰灯</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥3000</i><span>￥2500</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-six">
+						<img src="images/9.jpg" alt="">
+						<p>室内装饰灯</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥4999</i><span>￥2500</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+					<div class="collect-content-bottom-seven">
+						<img src="images/11.jpg" alt="">
+						<p>石玉手镯</p>
+						<p>Vel illum qui dolorem eum fugiat.</p>
+						<p>
+							<i>￥9999</i><span>￥8999</span><a>加入购物车</a>
+						</p>
+						<a>快速查看</a>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//comllecttions-->
+		<!--timer-->
+		<div class="timer">
+			<div class="timer-content clearfix">
+				<div class="timer-content-left">
+					<h1>Sunt In Culpa Qui Officia Deserunt Mollit</h1>
+						<p>
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/2.png" alt="">
+							<img src="images/1.png" alt="">
+						</p>
+						<p>
+							<i>$580</i><span>$550</span>
+						</p>
+						<h4>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</h4>
+						<a>快速查看</a>
+				</div>
+				<div class="timer-content-right">
+					<img src="images/17.jpg" >
+				</div>
+			</div>
+		</div>
+		<!--//timer-->
+		<!--footer-top-->
+		<div class="footer-top">
+			<div class="footer-top-content">
+				<img src="images/12.jpg" >
+				<div>
+					<h3>45% Offer For</h3>
+					<span>
+						Women & <br>
+						Children's
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--//footer-top-->
+		<!--footrt-->
+		<div class="footer">
+			<div class="footer-content clearfix">
+				<div class="footer-content-top clearfix">
+					<div class="footer-content-top-one">
+						<p>关于我们</p>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+					</div>
+					<div class="footer-content-top-two">
+						<p>联系信息</p>
+						<p>位置:北京故宫斜对面</p>
+						<p>email:888888@66.com</p>
+						<p>电话:18888886666</p>
+					</div>
+					<div class="footer-content-top-three">
+						<p>网络相册</p>
+						<div><img src="images/13.jpg" ></div>
+						<div><img src="images/14.jpg" ></div>
+						<div><img src="images/15.jpg" ></div>
+						<div><img src="images/16.jpg" ></div>
+						<div><img src="images/13.jpg" ></div>
+						<div><img src="images/14.jpg" ></div>
+						<div><img src="images/15.jpg" ></div>
+						<div><img src="images/16.jpg" ></div>
+						<div><img src="images/13.jpg" ></div>
+						<div><img src="images/14.jpg" ></div>
+						<div><img src="images/15.jpg" ></div>
+						<div><img src="images/16.jpg" ></div>
+					</div>
+					<div class="footer-content-top-four">
+						<p>最新博客</p>
+						<div>
+							<img src="images/9.jpg" >
+							<span>Culpa Qui Officia Deserunt</span>
+							<span>Posted On 25/3/2018</span>
+						</div>
+						<div>
+							<img src="images/6.jpg" >
+							<span>Culpa Qui Officia Deserunt</span>
+							<span>Posted On 25/3/2018</span>
+						</div>
+					</div>
+				</div>
+				<div class="footer-content-middle">
+					<div>
+						<div></div>
+						<h2>Best Store</h2>
+						<div></div>
+					</div>
+					<p>
+						SHOPPING ANYWHERE
+					</p>
+				</div>
+				<div class="footer-content-bottom">
+					<div>
+						Copyright © 2018.Company name All rights reserved.More Templates <span>MRLIULU</span> - Collect from MYslef
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//footer-->
+	</body>
 </html>
